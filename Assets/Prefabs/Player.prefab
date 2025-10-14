@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6748310115926764759}
   - component: {fileID: 8051862635841732892}
   - component: {fileID: -5430983934950771529}
+  - component: {fileID: 5654597351567859573}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -150,6 +151,7 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 9055027406657741664}
   - {fileID: -5430983934950771529}
+  - {fileID: 5654597351567859573}
   ForceRemoteRenderTimeframe: 0
 --- !u!143 &8051862635841732892
 CharacterController:
@@ -188,7 +190,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1750345f8df95184495d4b59a97c0035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpPressed: 0
-  Playerspeed: 2
+  PlayerSpeed: 2
   JumpForce: 5
-  Gravityvalue: -9.81
+  GravityValue: -9.81
+--- !u!114 &5654597351567859573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7255589257009387142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e698bf41287072b4dbfb6efe0f90970a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MeshRenderer: {fileID: 6631938962029376706}
+  _NetworkedColor: {r: 0, g: 0, b: 0, a: 0}
